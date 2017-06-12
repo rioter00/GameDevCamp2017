@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class projectileMovement : MonoBehaviour {
@@ -11,7 +11,7 @@ public class projectileMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		shooter = GameObject.FindGameObjectWithTag ("Player");
-		facingRight = shooter.GetComponent<character>().facingRight;
+		facingRight = shooter.GetComponent<character>().m_FacingRight;
 		print (facingRight);
 	}
 	
